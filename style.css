@@ -1,0 +1,82 @@
+/* reset the style */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* layout */
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+aside {
+    grid-row: 1 / -1;
+}
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+main {
+    grid-area: 2 / 2 / -1 / -1;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+/* typography */
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+aside {
+    color: #272829;
+}
+aside .heading {
+    font-size: 1.2rem;
+}
+aside * li {
+    font-size: 1.2rem;
+}
+
+/* style */
+    /* img dimension changing */
+.heading img{
+    width: 35px;
+}
+img[alt="profile-picture"] {
+    width: 70px;
+}
+li img, .search-bar img, .notification > img:first-child, .react img{
+    width: 25px;
+}
+.notification img:nth-child(2) {
+    width: 50px;
+}
+
+    /* aside style changing */
+aside {
+    padding-top: 1rem;
+    background-color: #FFF6E0;
+}
+aside > * {
+    margin-bottom: 45px;
+}
+aside .heading, li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.heading {
+    gap: 10px;
+    margin-left: 1.7rem;
+}
+li {
+    gap: 20px;
+    margin-left: 2rem;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
