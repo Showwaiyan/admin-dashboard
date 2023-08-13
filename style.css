@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* layout */
@@ -39,6 +40,19 @@ aside * li {
     font-size: 1.2rem;
 }
 
+header .notification h5 {
+    font-size: 1.2rem;
+}
+header .profile div h6 {
+    font-size: 0.9rem;
+}
+header .profile div h3 {
+    font-size: 1.5rem;
+}
+header .posting div h4 {
+    font-size: 1rem;
+}
+
 /* style */
     /* img dimension changing */
 .heading img{
@@ -46,6 +60,7 @@ aside * li {
 }
 img[alt="profile-picture"] {
     width: 70px;
+    border-radius: 50%;
 }
 li img, .search-bar img, .notification > img:first-child, .react img{
     width: 25px;
@@ -79,4 +94,61 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+    /* header style changing */
+header {
+    background-color: #D8D9DA;
+    padding: 0 40px;
+}
+header .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search-bar input {
+    padding: 5px;
+    padding-left: 15px;
+    
+    border: 2px solid #FFF6E0;
+    background-color: #FFF6E0;
+    border-radius: 30px;
+
+    width: 80%;
+}
+.search-bar input:focus {
+    outline: none !important;
+    border-color: #61677A;
+}
+header .notification {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    justify-self: end;
+
+    width: 85%;
+}
+header .profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .profile .bio {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+header .posting {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header .posting div {
+    background-color: #FFF6E0;
+
+    padding: 10px 30px;
+    border-radius: 20px;
+
+    cursor: pointer;
 }
